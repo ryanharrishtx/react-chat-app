@@ -4,13 +4,27 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0px;
+
+}
+
+.ce-avatar-dot {
+  margin: 5px;
+}
+
+.authPage {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  display: flex;
+  justify-content: center; /* horizontally centers the form */
+  align-items: center; /* vertically centers the form */
 }
 
 .background {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(75deg, rgb(20, 23, 33) 0%, rgb(20, 23, 33) 50%, rgba(20, 23, 33,0.8) 100%);
-  /* Vertical center */
+  background-image: url("./assets/background.jpg");
   display: table-cell;
   vertical-align: middle;
 }
@@ -18,21 +32,24 @@ body {
 .form-card {
   width: 50%;
   max-width: 350px;
-  padding: 0% 25% 0% 25%;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.form-title { 
-  font-size: 42px; 
-  font-family: 'Avenir'; 
-  font-weight: 800; 
-  letter-spacing: 0.5px; 
-  color: #e8e8e8; 
-  padding-bottom: 12px; 
+.form-title {
+  font-size: 42px;
+  font-family: "Avenir";
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #e8e8e8;
+  padding-bottom: 12px;
 }
 
 .form-subtitle {
   font-size: 18px;
-  font-family: 'Avenir';
+  font-family: "Avenir";
   letter-spacing: 0.5px;
   color: #afafaf;
   padding-bottom: 24px;
@@ -74,16 +91,36 @@ body {
   border-radius: 8px;
   font-family: "Avenir";
   cursor: pointer;
-  transition: all .44s ease;
-  -webkit-transition: all .44s ease;
-  -moz-transition: all .44s ease;
+  transition: all 0.44s ease;
+  -webkit-transition: all 0.44s ease;
+  -moz-transition: all 0.44s ease;
 }
-.auth-button:hover { filter: brightness(145%); }
+.auth-button:hover {
+  filter: brightness(145%);
+}
 
 .chat-wrapper {
-  height: 80vh; 
+  height: 80vh;
   width: 80%;
-  margin-left: 10%; 
-  color: white; 
+  margin-left: 10%;
+  color: white;
   background: rgb(43, 47, 60);
+}
+
+.ce-chat-header-title, 
+.ce-chat-header-subtitle { 
+  color: #800080;
+}
+
+.ce-message-date-text {
+  color: black !important;
+}
+
+.ce-my-message-body {
+  background-color: #800080 !important;
+}
+
+.ce-their-message-body {
+  background-color: #7851A9 !important;
+  color: white !important;
 }

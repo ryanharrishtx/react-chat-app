@@ -13,6 +13,7 @@ const AuthPage = (props) => {
 
   return (
     <div className="background">
+      <div className="authPage">
       <form onSubmit={onSubmit} className="form-card">
         <div className="form-title">Welcome 👋</div>
 
@@ -22,10 +23,11 @@ const AuthPage = (props) => {
           <div className="auth-label">Username</div>
           <input className="auth-input" name="username" />
           <button className="auth-button" type="submit">
-            Enter
+            Login
           </button>
         </div>
       </form>
+      </div>
     </div>
   );
 };
