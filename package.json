@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "backend/server.js",
+  "engines": {
+    "node": "21.4.0",
+    "npm": "10.4.0"
+  },
   "scripts": {
     "start": "node backend/server.js",
     "develop": "concurrently \"cd backend && npm run watch\" \"cd frontend && npm run dev\"",
